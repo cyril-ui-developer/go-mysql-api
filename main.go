@@ -18,7 +18,7 @@ func main() {
 	log.Printf("Starting the server up on http://localhost:%s", port)
 
 	r := chi.NewRouter()
-	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
+	r.Get("/home", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Welcome to Go and MySQL API"))
 	})
 	fmt.Println("Welcome to Go and MySQL API")
