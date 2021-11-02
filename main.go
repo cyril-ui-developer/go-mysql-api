@@ -10,8 +10,8 @@ import (
 )
 
 func main() {
-	// Get the port from env vars or default to 8000
-	port := "8000"
+	// Get the port from env vars or default to 8080
+	port := "8080"
 	if fromEnv := os.Getenv("PORT"); fromEnv != "" {
 		port = fromEnv
 	}
