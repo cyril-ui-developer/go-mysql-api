@@ -19,7 +19,7 @@ func main() {
 
 	r := chi.NewRouter()
 	r.Get("/home", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("Welcome to Go and MySQL API"))
+		w.Write([]byte("Welcome to Go and MySQL API..."))
 	})
 	fmt.Println("Welcome to Go and MySQL API")
 
